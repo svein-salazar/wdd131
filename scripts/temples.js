@@ -6,10 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
 
     const hamburger = document.getElementById('hamburger');
-    const navMenu = document.querySelector('nav ul');
+    const navMenu = document.querySelector('nav');
 
     hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('open');
-        hamburger.textContent = navMenu.classList.contains('open');
+        navMenu.classList.toggle('show');
     });
 });

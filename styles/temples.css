@@ -1,5 +1,7 @@
 * {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "rubik", sans-serif;
 }
 
@@ -10,36 +12,42 @@ body {
 
 header {
     background-color: aliceblue;
-    color: wheat;
+    color: black;
     text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
 
 header h1 {
     padding-right: 1.5rem;
-    display: inline-flex;
 }
 
 #hamburger {
-    display: inline-flex;
     font-size: 2rem;
     font-weight: 700;
-    text-decoration: none;
-    padding: auto;
-    color: white;
-    align-self: center;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 #hamburger::before {
     content: "≡";
 }
 
-#hamburger::after {
-    content: "✖";
-} 
-
 nav {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: aliceblue;
+    text-align: center;
+    color: black;
 }
 
 nav.show {
@@ -49,13 +57,13 @@ nav.show {
 nav.show ul li a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 16px;
     font-size: 20px;
 }
 
 nav.show a:hover {
-    background-color:aquamarine;
+    background-color:lightcyan;
     color: black;
 
 }
