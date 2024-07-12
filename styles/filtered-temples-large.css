@@ -1,0 +1,52 @@
+@media (min-width: 44.7rem) {
+    header h1 {
+        color: #fff;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+    
+    main h2 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    main h2 {
+        display: none;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        position: unset;
+        margin-right: 0.4rem;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        position: unset;
+        top: unset;
+        right: unset;
+        width: unset;
+        justify-content: space-around;
+    }
+    
+    .navigation li {
+        border-bottom: none;
+        width: auto;
+        display: inline-block;
+    }
+    
+    .temple-listings {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        margin: 1rem 0 0 0;
+    }
+    
+    .temple-card {
+        margin-bottom: 0;
+    }
+}
