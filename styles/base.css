@@ -84,3 +84,13 @@ footer {
 footer p {
     margin: 5px 0;
 }
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
