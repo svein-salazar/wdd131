@@ -1,0 +1,86 @@
+@media only screen and (min-width: 32rem) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Rubik", sans-serif;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color:wheat;
+        color: brown;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .title {
+        color: brown;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+    nav ul li a {
+        color: brown;
+        text-decoration: none;
+        padding: 1rem;
+    }
+
+    nav ul li a:hover {
+        color: wheat;
+        background-color: brown;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    main h2 {
+        color: brown;
+        padding-top: 16px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    figure img {
+        padding: 16px;
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px;
+        background-color: wheat;
+        color: brown;
+        text-align: center;
+    }
+}
