@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Place</title>
+    <meta name="description" content="This page provides an introduction to web design concepts through creating a webpage focused on a country, region, or city. Explore the specific requirements for layout, design, and content to enhance web development skills.">
+    <meta name="author" content="Eduardo Svein Salazar">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Oaxaca - Mexico</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 601px)" srcset="images/hero-large.webp">
+            <img src="images/hero-small.webp" alt="Oaxaca girl" class="hero-image">
+        </picture>
+        <h2 class="data">Data</h2>
+        <div class="data">
+            <table>
+                <tr>
+                    <td class="leftCell"><b>Area:</b></td>
+                    <td class="rightCell">93 757 km²</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Population:</b></td>
+                    <td class="rightCell">4 132 148</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Capital:</b></td>
+                    <td class="rightCell">Oaxaca de Juárez.</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Language(s):</b></td>
+                    <td class="rightCell">Spanish, zapoteco, mixteco, mazateco, mixe, chinanteco, chatino, triqui y cuicateco</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Currency:</b></td>
+                    <td class="rightCell">Mexican Peso</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Time Zone:</b></td>
+                    <td class="rightCell">GMT-6</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Calling Code:</b></td>
+                    <td class="rightCell">+52 951</td>
+                </tr>
+            </table>
+        </div>
+        <h2 class="weather">Weather</h2>
+        <div class="weather">
+            <img id="invisIcon" src="images/weather-icon.svg" alt="weather icon" width="100" height="100">
+            <table>
+                <tr>
+                    <td class="leftCell"><b>Temperature:</b></td>
+                    <td class="rightCell" id="temp">31°C</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Conditions:</b></td>
+                    <td class="rightCell">Partly Cloudy</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Wind:</b></td>
+                    <td class="rightCell" id="windspeed">16 km/h</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Wind Chill:</b></td>
+                    <td class="rightCell" id="windchill">N/A</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🏀 Eduardo Svein Salazar 🏀 Mexico.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

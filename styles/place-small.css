@@ -1,0 +1,86 @@
+:root {
+    --color6: #E27D5E; 
+    --color7: #FFD700; 
+    --color8: #CC5500;
+    --color9: #800000; 
+    --color10: #423921;
+    --font-family: 'Lora', sans-serif;
+}
+
+@media (max-width: 600px) {
+
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        background-color: var(--color8);
+        color: var(--color10);
+        padding: 2rem;
+        width: 100%;  
+    }
+
+    main img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    div.data, h2.data {
+        background-color: var(--color6);
+        color: var(--color9);
+        margin:0;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    h2.data {
+        text-align: center;
+    }
+
+    div.data table {
+        margin: 0 auto;
+    }
+
+    div.weather, h2.weather {
+        background-color: var(--color7);
+        color: var(--color8);
+        margin: 0;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    h2.weather {
+        text-align: center; 
+    }
+
+    div.weather {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #invisIcon {
+        display: block;
+        width: 100px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    div.weather table {
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+
+
+    footer {
+        background-color: var(--color8);
+        color: var(--color10);
+        padding: 2rem;
+        text-align: center;
+    }
+}

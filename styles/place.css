@@ -1,0 +1,122 @@
+:root {
+    --color1: #1A1423;
+    --color2: #FFD700;
+    --color3: #D84797;
+    --color4: #CC3F0C;
+    --color5: #233D4D;
+    --font-family: 'Lora', sans-serif;
+}
+
+* {
+    font-family: var(--font-family);
+}
+
+@media (min-width: 601px) {
+    main,
+    header {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    header {
+        padding: 3rem;
+        background-color: var(--color2);
+        color: var(--color5);
+        margin-bottom: 10px;
+    }
+
+    main img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    footer {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 0;
+        text-align: center;
+        background-color: var(--color4);
+        padding: 1rem;
+        color: var(--color1);
+    }
+
+    h2.data {
+        position: absolute;
+        top: 20rem;
+        left: 2rem;
+        z-index: 2;
+    }
+
+    div.data {
+        position: absolute;
+        top: 20rem;
+        left: 2rem;
+        background-color: #d847979e;
+        width: 300px;
+        margin-left: 5px;
+        padding-top: 6rem;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2.weather {
+        position: absolute;
+        top: 40rem;
+        right: 4.5rem;
+        z-index: 2;
+        width: 13%;
+    }
+
+    h2.weather::after {
+        content: "   ⛅";
+    }
+
+    div.weather {
+        position: absolute;
+        top: 40rem;
+        right: 2rem;
+        background-color: #d847979e;
+        width: 250px;
+        margin-left: 5px;
+        padding-top: 5.5rem;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.weather table {
+        margin-right: 3rem;
+    }
+
+    table td {
+        height: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .leftCell {
+        text-align: right;
+    }
+
+    .rightCell {
+        text-align: left;
+    }
+
+    h2 {
+        text-align: left;
+        background-color: #ffd900c0;
+        color: var(--color5);
+        padding: 1rem;
+        width: 15%;
+    }
+
+    #invisIcon {
+        display: none;
+    }
+}
