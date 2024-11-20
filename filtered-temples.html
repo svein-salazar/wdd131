@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples - Eduardo Svein Salazar</title>
+    <meta 
+        name="description"
+        content="wdd 131 assignment. This assignment applies the concepts presented in the learning activities to a picture album page that is responsive in small and larger views. This page will utilize a 'hamburger' menu and respond to user requests, and will contain JS filters.">
+    <meta name="Author" content="Eduardo Svein Salazar">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" title="menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a id="home" href="#HOME" class="active">Home</a></li>
+                <li><a id="old" href="#OLD">Old</a></li>
+                <li><a id="new" href="#NEW">New</a></li>
+                <li><a id="large" href="#LARGE">Large</a></li>
+                <li><a id="small" href="#SMALL">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="filter-indicator">Home</h2>
+        <div class="temple-listings"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> 🏀 Eduardo Svein Salazar 🏀 Mexico.</p>
+        <p id="last-Modified"></p>
+    </footer>
+</body>
+</html>
