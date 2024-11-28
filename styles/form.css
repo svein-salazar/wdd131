@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form Styles */
+.review-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border don't affect element width */
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+}
+
+/* Star Rating Styles */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 2rem; /* Adjust the size as needed */
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover ~ label {
+    color: gold;
+}
+
+/* Features Checkbox Styles */
+.features-fieldset {
+    display: block; /* Change display to block for consistent list appearance */
+}
+
+.features-fieldset label {
+    display: block;  /* Make each label occupy a new line */
+    margin-left: 1.5rem; /* Indent the checkboxes for a clear list structure */
+    position: relative; /* Necessary for positioning the checkbox */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    .review-form {
+        max-width: 95%;
+    }
+
+    .star-rating label {
+        font-size: 1.5rem; /* Smaller stars on smaller screens */
+    }
+}
