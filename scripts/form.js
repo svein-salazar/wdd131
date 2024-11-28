@@ -1,4 +1,4 @@
-// Last Modified footer section 
+// Last Modified footer section test
 document.addEventListener('DOMContentLoaded', () => {
     const currentYear = new Date().getFullYear();
     document.getElementById('currentyear').textContent = currentYear;
