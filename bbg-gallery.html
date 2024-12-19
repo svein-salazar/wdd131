@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Game Gallery - Eduardo Svein Salazar</title>
+    <meta 
+        name="description"
+        content="Discover and explore a diverse collection of board games in our gallery. Filter by type, genre, or player count, and find detailed descriptions, images, and information for each game in the collection. Perfect for board game enthusiasts and newcomers alike!">
+    <meta name="Author" content="Eduardo Svein Salazar">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bgg-gallery.css">
+    <script src="scripts/bgg-gallery.js" defer></script>
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <a href="bbg-gallery.html" class="logo">
+          <img src="images/board game gallery/bbg-logo.jpg" alt="BBG Logo">
+        </a>
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="bbg-gallery.html">Gallery</a></li>
+          <li><a href="bbg-rate-form.html">Rate Form</a></li>
+          <li><a href="bbg-about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+     <!-- Hero Section -->
+     <section class="hero">
+        <div class="slideshow-container">
+            <!-- Slide 1 -->
+            <div class="slide fade">
+                <img src="images/board game gallery/bbg-logo.jpg" alt="Hero Image 1">
+                <div class="hero-text">
+                    <h1>Welcome to the Board Game Gallery</h1>
+                    <p>Take a look to this board game collection!</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide fade">
+                <img src="images/board game gallery/bbg.webp" alt="Hero Image 2">
+                <div class="hero-text">
+                    <h1>Discover Amazing Games</h1>
+                    <p>You can also rate the board games once you test them</p>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots/Indicators -->
+        <div class="dots-container">
+            <span class="dot" onclick="setCurrentSlide(1)"></span>
+            <span class="dot" onclick="setCurrentSlide(2)"></span>
+        </div>
+    </section>
+     <!-- Title -->
+     <h2>PORTFOLIO</h2>
+
+     <!-- Filter Bar -->
+     <div id="myBtnContainer">
+         <button class="btn active" onclick="filterSelection('all')">Show all</button>
+         <button class="btn" onclick="filterSelection('ameritrash')">Ameritrash</button>
+         <button class="btn" onclick="filterSelection('euro')">Euro</button>
+         <button class="btn" onclick="filterSelection('abstract')">Abstract</button>
+         <button class="btn" onclick="filterSelection('filler')">Filler</button>
+         <button class="btn" onclick="filterSelection('duration-30')">30 Min</button>
+         <button class="btn" onclick="filterSelection('duration-60')">60 Min</button>
+         <button class="btn" onclick="filterSelection('duration-45')">45 Min</button>
+         <button class="btn" onclick="filterSelection('duration-90')">90 Min</button>
+     </div>
+ 
+     <!-- 3x3 Image Gallery Grid -->
+     <div class="row">
+         <!-- Example of a column with a slideshow -->
+         <div class="column players3-5 ameritrash duration-30 show">
+             <div class="content">
+                 <div class="slideshow-container">
+                     <div class="slide fade">
+                         <img src="images/board game gallery/arte-moderno.webp" alt="arte moderno">
+                     </div>
+                     <div class="slide fade">
+                         <img src="images/board game gallery/arte-moderno-c.webp" alt="arte moderno">
+                     </div>
+                     <div class="slide fade">
+                         <img src="images/board game gallery/arte-moderno-1.png" alt="Game 1">
+                     </div>
+                 </div>
+                 <h4>Arte Moderno</h4>
+                 <p>Ameritrash | 3-5 Players | 30 Min</p>
+             </div>
+         </div>
+
+         <div class="column players2-4 abstract duration-45 show">
+             <div class="content">
+                 <div class="slideshow-container">
+                     <div class="slide fade">
+                         <img src="images/board game gallery/azul.jpg" alt="Game 2">
+                     </div>
+                     <div class="slide fade">
+                         <img src="images/board game gallery/azul-c.png" alt="Game 2">
+                     </div>
+                     <div class="slide fade">
+                         <img src="images/board game gallery/azul-1.webp" alt="Game 2">
+                     </div>
+                 </div>
+                 <h4>Azul</h4>
+                 <p>Abstract | 2-4 Players | 45 Min</p>
+             </div>
+         </div>
+
+         <div class="column players3-4 euro duration-60 show">
+            <div class="content">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="images/board game gallery/Catan.webp" alt="Game 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/board game gallery/catan-c.webp" alt="Game 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/board game gallery/catan-1.webp" alt="Game 2">
+                    </div>
+                </div>
+                <h4>Catan</h4>
+                <p>Euro | 3-4 Players | 60 Min</p>
+            </div>
+        </div>
+     </div>
+    <div class="row">    
+        <div class="column players2-4 ameritrash duration-30 show">
+            <div class="content">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="images/board game gallery/cosmic-cow.jpg" alt="Game 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/board game gallery/cosmic-cow-c.webp" alt="Game 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/board game gallery/cosmic-cow-1.webp" alt="Game 2">
+                    </div>
+                </div>
+                <h4>Cosmic Cows</h4>
+                <p>Ameritrash | 2-4 Players | 30 Min</p>
+            </div>
+        </div>
+
+        <div class="column players3-9 filler duration-15 show">
+            <div class="content">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="images/board game gallery/feria-de-las-pulgas.webp" alt="Game 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/board game gallery/feria-de-las-pulgas-c.webp" alt="Game 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/board game gallery/feria-de-las-pulgas-1.webp" alt="Game 2">
+                    </div>
+                </div>
+                <h4>La feria de las pulgas de Titirilquen</h4>
+                <p>Filler | 3-9 Players | 15 min</p>
+            </div>
+        </div>
+
+        <div class="column players2-4 ameritrash duration-45 show">
+            <div class="content">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="images/board game gallery/hld.jpg" alt="Game 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/board game gallery/hld-c.webp" alt="Game 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/board game gallery/hld-1.webp" alt="Game 2">
+                    </div>
+                </div>
+                <h4>Game 2</h4>
+                <p>Ameritrash | 2-4 Players | 45 Min</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column players2-6 abstract duration-30 show">
+            <div class="content">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="images/board game gallery/morada-maldita.jpg" alt="Game 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/board game gallery/morada-maldita-c.webp" alt="Game 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/board game gallery/morada-maldita_1.png" alt="Game 2">
+                    </div>
+                </div>
+                <h4>La Morada Maldita</h4>
+                <p>Abstract | 2-6 Players | 30 Min</p>
+            </div>
+        </div>
+
+        <div class="column players3-8 abstract duration-90 show">
+            <div class="content">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="images/board game gallery/mysterium.webp" alt="Game 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/board game gallery/mysterium-c.webp" alt="Game 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/board game gallery/mysterium-1.webp" alt="Game 2">
+                    </div>
+                </div>
+                <h4>Mysterium</h4>
+                <p>Abstract | 3-8 Players | 90 Min</p>
+            </div>
+        </div>
+
+        <div class="column players3-9 abstract duration-90 show">
+            <div class="content">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="images/board game gallery/obscurio.jpg" alt="Game 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/board game gallery/obscurio-c.webp" alt="Game 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/board game gallery/obscurio-1.webp" alt="Game 2">
+                    </div>
+                </div>
+                <h4>Obscurio</h4>
+                <p>Abstract | 3-9 Players | 90 Min</p>
+            </div>
+        </div>
+     </div>
+  </body>
+
+<footer>
+    <p>&copy; 2024 BBG Board Game Gallery</p>
+    <p>Author: Eduardo Svein Salazar Flores</p>
+    <p>Last Modified: <time id="lastModified" datetime="2024-12-14"></time></p>
+    <p>
+      Follow us on:
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> | 
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </p>
+</footer>
+</body>
+</html>

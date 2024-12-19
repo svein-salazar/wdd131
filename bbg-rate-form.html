@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Game Gallery - Eduardo Svein Salazar</title>
+    <meta 
+        name="description"
+        content="Discover and explore a diverse collection of board games in our gallery. Filter by type, genre, or player count, and find detailed descriptions, images, and information for each game in the collection. Perfect for board game enthusiasts and newcomers alike!">
+    <meta name="Author" content="Eduardo Svein Salazar">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bgg-rate-form.css">
+    <script src="scripts/bgg-rate-form.js" defer></script>
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <a href="bbg-gallery.html" class="logo">
+          <img src="images/board game gallery/bbg-logo.jpg" alt="BBG Logo">
+        </a>
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="bbg-gallery.html">Gallery</a></li>
+          <li><a href="bbg-rate-form.html">Rate Form</a></li>
+          <li><a href="bbg-about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="review-form">
+            <fieldset>
+                <legend>Board Game Rating Form</legend>
+                <label for="product">Select the game:</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Board Games from this collection...</option>
+                </select>
+
+                <label for="rating">Rate the game from 1 to 5 stars:</label>
+                <div class="star-rating">
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Experience</legend>
+                <label for="installDate">Date you played it:</label>
+                <input type="date" id="installDate" name="installDate" required>
+
+                <fieldset class="features-fieldset">
+                    <legend>Board Game features (Check all that apply):</legend>
+                    </fieldset>
+
+                <label for="review">Written Review (optional):</label>
+                <textarea id="review" name="review"></textarea>
+            </fieldset>
+
+            <label for="userName">Your Name (optional):</label>
+            <input type="text" id="userName" name="userName">
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </main>
+  </body>
+
+<footer>
+    <p>&copy; 2024 BBG Board Game Gallery</p>
+    <p>Author: Eduardo Svein Salazar Flores</p>
+    <p>Last Modified: <time id="lastModified" datetime="2024-12-14"></time></p>
+    <p>
+      Follow us on:
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> | 
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </p>
+</footer>
+</body>
+</html>
